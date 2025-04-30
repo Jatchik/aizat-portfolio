@@ -3,16 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmad Aizat Portfolio</title>
+  <title>Ahmad Aizat — Livestream & Multimedia Specialist</title>
 
-  <!-- AOS Scroll Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
       background: #f4f4f4;
       color: #333;
     }
@@ -29,142 +27,103 @@
       font-size: 32px;
     }
 
-    h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 20px;
-      line-height: 1.6;
-    }
-
     section {
       padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
     }
 
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      margin-top: 20px;
     }
 
-    .gallery-grid img {
+    .gallery-grid img, video {
       width: 100%;
-      border-radius: 12px;
-      transition: transform 0.3s;
-    }
-
-    .gallery-grid img:hover {
-      transform: scale(1.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .video-card {
-      background: #fff;
-      border-radius: 15px;
+      margin-bottom: 40px;
+      background: white;
+      border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
-    }
-
-    video {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     footer {
       background: #111;
       color: #fff;
-      padding: 20px;
       text-align: center;
-      font-size: 14px;
-    }
-
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
 
-  <header data-aos="fade-down">
-    <h1>Ahmad Aizat — Event & Multimedia Technician</h1>
-    <p>Laser mapping, live streaming, multi-camera broadcast, and visual show control</p>
-  </header>
+<header data-aos="fade-down">
+  <h1>Ahmad Aizat</h1>
+  <p>Professional in Live Streaming | Laser Mapping | Multimedia Systems</p>
+</header>
 
-  <section id="gallery" data-aos="fade-up">
-    <h2>📸 Image Gallery</h2>
-    <p>A showcase of creative and technical setups from live events and media productions</p>
-    <div class="gallery-grid">
-      <img src="LASER 4.jpeg" alt="Laser Show - Party Event">
-      <img src="LIVE SETUP 1.jpeg" alt="Full-scale Stage Setup - Tech Positioning">
-      <img src="MCP & LED MAPPING 2.jpeg" alt="LED Wall Mapping - Show Control">
-      <img src="MCP & LIVE SETUP 12.jpeg" alt="Live Broadcast Setup - Mixing Console">
-      <img src="MCP CAM OPERATE 13.jpeg" alt="Camera Operation - Live Multi-Cam Shoot">
-      <img src="NETWORK ROUTING 2.jpeg" alt="Routing and Networking Equipment Setup">
-      <img src="TIKTOK LIVE STREAMING SETUP 6.jpeg" alt="TikTok Multi-Cam Live Setup">
-    </div>
-  </section>
+<section id="livestream" data-aos="fade-up">
+  <h2>🎥 Social Media Live Streaming</h2>
+  <p>High-quality setups and operation for TikTok, Instagram, YouTube, Facebook Live and hybrid events.</p>
+  <div class="gallery-grid">
+    <img src="TIKTOK LIVE STREAMING SETUP 6.jpeg" alt="TikTok Stream Setup" />
+    <img src="TIKTOK LIVE STREAMING SETUP 7.jpeg" alt="Instagram Stream Setup" />
+    <img src="TIKTOK LIVE STREAMING SETUP 9.jpeg" alt="Facebook Multi-Cam" />
+    <img src="TIKTOK LIVE STREAMING SETUP 10.jpeg" alt="YouTube Live Show Control" />
+  </div>
 
-  <section id="videos" data-aos="fade-up">
-    <h2>🎬 Video Projects</h2>
-    <p>Selected clips showing core work in camera operation, live control, and technical production</p>
+  <div class="video-card" data-aos="zoom-in">
+    <h3>Live Stream Behind the Scenes</h3>
+    <p>Efficient multi-cam prep and routing for TikTok & hybrid event broadcasts.</p>
+    <video controls>
+      <source src="tiktok live streaming setup (10).mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
 
-    <div class="video-card" data-aos="zoom-in">
-      <h3>MCP & Live Setup — Corporate Stream</h3>
-      <p>Operated multi-camera production for TikTok and hybrid events, ensuring live sync and visual control.</p>
-      <video controls>
-        <source src="MCP & LIVE SETUP 1.mp4" type="video/mp4" />
-      </video>
-    </div>
+<section id="lasers" data-aos="fade-up">
+  <h2>💡 Laser & LED Mapping</h2>
+  <p>Custom laser visuals, live show cueing, and synchronized LED content control for stage and club events.</p>
+  <div class="gallery-grid">
+    <img src="LASER 4.jpeg" alt="Laser Mapping Display" />
+    <img src="MCP & LED MAPPING 2.jpeg" alt="LED Mapping Control" />
+  </div>
+</section>
 
-    <div class="video-card" data-aos="zoom-in">
-      <h3>Laser Show & LED Mapping</h3>
-      <p>Served as laser jockey, managed real-time mapping and show visuals for party and event entertainment.</p>
-      <video controls>
-        <source src="MCP & LIVE SETUP 24.mp4" type="video/mp4" />
-      </video>
-    </div>
+<section id="production" data-aos="fade-up">
+  <h2>🎬 Multimedia & Technical Production</h2>
+  <p>Routing, camera operation, offline shooting, and backstage coordination for large-scale productions.</p>
+  <div class="gallery-grid">
+    <img src="MCP CAM OPERATE 13.jpeg" alt="Camera Operator View" />
+    <img src="NETWORK ROUTING 2.jpeg" alt="Routing Rack Setup" />
+  </div>
 
-    <div class="video-card" data-aos="zoom-in">
-      <h3>Offline Recording – Multicam Setup</h3>
-      <p>Directed camera layouts, recorded offline events with structured multi-cam positions.</p>
-      <video controls>
-        <source src="OFFLINE SHOOTING 15.mp4" type="video/mp4" />
-      </video>
-    </div>
+  <div class="video-card">
+    <h3>Offline Recording Sample</h3>
+    <p>Directed technical crew for offline shoot with professional layout and flow.</p>
+    <video controls>
+      <source src="OFFLINE SHOOTING 15.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
 
-    <div class="video-card" data-aos="zoom-in">
-      <h3>Network Routing & System Setup</h3>
-      <p>Configured streaming hardware, network routing for broadcast signal flow and remote control.</p>
-      <video controls>
-        <source src="NETWORK ROUTING.mp4" type="video/mp4" />
-      </video>
-    </div>
+<footer>
+  &copy; 2025 Ahmad Aizat | <a href="mailto:jatchik46@gmail.com" style="color: #00ffc3">Contact</a>
+</footer>
 
-  </section>
-
-  <footer>
-    &copy; 2025 Ahmad Aizat | Based in Kuala Lumpur | <a href="mailto:jatchik46@gmail.com">Contact Me</a>
-  </footer>
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
 
 </body>
 </html>
