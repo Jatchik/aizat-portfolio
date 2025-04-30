@@ -6,36 +6,73 @@
   <title>Ahmad Aizat — Livestream & Multimedia Specialist</title>
 
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      background: #0d1117;
+      color: #f0f0f0;
     }
 
     header {
-      background: #111;
-      color: #fff;
+      background: #161b22;
+      color: #00ffc3;
       padding: 40px 20px;
       text-align: center;
     }
 
     h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 36px;
+    }
+
+    .resume-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00ffc3;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .resume-button:hover {
+      background: #00cfa2;
     }
 
     section {
-      padding: 50px 20px;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: auto;
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 28px;
       margin-bottom: 20px;
+      color: #00ffc3;
+    }
+
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .filter-buttons button {
+      background: transparent;
+      border: 2px solid #00ffc3;
+      color: #00ffc3;
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .filter-buttons button:hover {
+      background: #00ffc3;
+      color: #000;
     }
 
     .gallery-grid {
@@ -44,25 +81,46 @@
       gap: 20px;
     }
 
-    .gallery-grid img, video {
+    .gallery-item {
+      display: none;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .gallery-item.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img, video {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     }
 
     .video-card {
-      margin-bottom: 40px;
-      background: white;
+      margin-top: 40px;
+      background: #161b22;
       border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     footer {
       background: #111;
-      color: #fff;
+      color: #888;
       text-align: center;
       padding: 20px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin: 10px;
+      color: #00ffc3;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -70,51 +128,34 @@
 
 <header data-aos="fade-down">
   <h1>Ahmad Aizat</h1>
-  <p>Professional in Live Streaming | Laser Mapping | Multimedia Systems</p>
+  <p>Live Streaming Expert | Laser Visual Artist | Multimedia Technician</p>
+  <a href="Ahmad-Aizat-Resume.pdf" download class="resume-button">📄 Download Resume (PDF)</a>
 </header>
 
-<section id="livestream" data-aos="fade-up">
-  <h2>🎥 Social Media Live Streaming</h2>
-  <p>High-quality setups and operation for TikTok, Instagram, YouTube, Facebook Live and hybrid events.</p>
-  <div class="gallery-grid">
-    <img src="TIKTOK LIVE STREAMING SETUP 6.jpeg" alt="TikTok Stream Setup" />
-    <img src="TIKTOK LIVE STREAMING SETUP 7.jpeg" alt="Instagram Stream Setup" />
-    <img src="TIKTOK LIVE STREAMING SETUP 9.jpeg" alt="Facebook Multi-Cam" />
-    <img src="TIKTOK LIVE STREAMING SETUP 10.jpeg" alt="YouTube Live Show Control" />
+<section id="portfolio" data-aos="fade-up">
+  <h2>📁 Portfolio Highlights</h2>
+  <div class="filter-buttons">
+    <button onclick="filterItems('all')">All</button>
+    <button onclick="filterItems('stream')">Live Streaming</button>
+    <button onclick="filterItems('laser')">Laser & LED</button>
+    <button onclick="filterItems('prod')">Production</button>
   </div>
-
-  <div class="video-card" data-aos="zoom-in">
-    <h3>Live Stream Behind the Scenes</h3>
-    <p>Efficient multi-cam prep and routing for TikTok & hybrid event broadcasts.</p>
-    <video controls>
-      <source src="tiktok live streaming setup (10).mp4" type="video/mp4">
-    </video>
+  <div class="gallery-grid">
+    <div class="gallery-item stream show"><img src="TIKTOK LIVE STREAMING SETUP 6.jpeg" alt="TikTok Setup"></div>
+    <div class="gallery-item stream show"><video controls><source src="tiktok live streaming setup (10).mp4" type="video/mp4"></video></div>
+    <div class="gallery-item laser show"><img src="LASER 4.jpeg" alt="Laser Show"></div>
+    <div class="gallery-item laser show"><img src="MCP & LED MAPPING 2.jpeg" alt="LED Mapping"></div>
+    <div class="gallery-item prod show"><img src="NETWORK ROUTING 2.jpeg" alt="Routing"></div>
+    <div class="gallery-item prod show"><video controls><source src="OFFLINE SHOOTING 15.mp4" type="video/mp4"></video></div>
   </div>
 </section>
 
-<section id="lasers" data-aos="fade-up">
-  <h2>💡 Laser & LED Mapping</h2>
-  <p>Custom laser visuals, live show cueing, and synchronized LED content control for stage and club events.</p>
-  <div class="gallery-grid">
-    <img src="LASER 4.jpeg" alt="Laser Mapping Display" />
-    <img src="MCP & LED MAPPING 2.jpeg" alt="LED Mapping Control" />
-  </div>
-</section>
-
-<section id="production" data-aos="fade-up">
-  <h2>🎬 Multimedia & Technical Production</h2>
-  <p>Routing, camera operation, offline shooting, and backstage coordination for large-scale productions.</p>
-  <div class="gallery-grid">
-    <img src="MCP CAM OPERATE 13.jpeg" alt="Camera Operator View" />
-    <img src="NETWORK ROUTING 2.jpeg" alt="Routing Rack Setup" />
-  </div>
-
-  <div class="video-card">
-    <h3>Offline Recording Sample</h3>
-    <p>Directed technical crew for offline shoot with professional layout and flow.</p>
-    <video controls>
-      <source src="OFFLINE SHOOTING 15.mp4" type="video/mp4">
-    </video>
+<section id="contact" data-aos="fade-up">
+  <h2>📬 Contact Me</h2>
+  <p>Interested in hiring me or collaborating on a project? Let’s connect!</p>
+  <div class="contact-links">
+    <a href="mailto:jatchik46@gmail.com">✉️ Email</a>
+    <a href="https://wa.me/601156364599" target="_blank">💬 WhatsApp</a>
   </div>
 </section>
 
@@ -124,6 +165,21 @@
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>AOS.init({ duration: 1000, once: true });</script>
+<script>
+  function filterItems(category) {
+    const items = document.querySelectorAll('.gallery-item');
+    items.forEach(item => {
+      if (category === 'all') {
+        item.classList.add('show');
+      } else {
+        item.classList.remove('show');
+        if (item.classList.contains(category)) {
+          item.classList.add('show');
+        }
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
