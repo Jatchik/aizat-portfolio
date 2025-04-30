@@ -54,6 +54,19 @@
       color: #00ffc3;
     }
 
+    .intro {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .intro p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
     .filter-buttons {
       text-align: center;
       margin-bottom: 30px;
@@ -90,6 +103,13 @@
       display: block;
     }
 
+    .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #bbb;
+      text-align: center;
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -99,13 +119,6 @@
       width: 100%;
       border-radius: 12px;
       box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    }
-
-    .video-card {
-      margin-top: 40px;
-      background: #161b22;
-      border-radius: 12px;
-      padding: 20px;
     }
 
     footer {
@@ -122,6 +135,15 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    .testimonial {
+      background: #161b22;
+      border-left: 4px solid #00ffc3;
+      padding: 20px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
@@ -132,6 +154,12 @@
   <a href="Ahmad-Aizat-Resume.pdf" download class="resume-button">📄 Download Resume (PDF)</a>
 </header>
 
+<section class="intro" data-aos="fade-up">
+  <p>
+    A highly skilled event technician with over 4 years of experience delivering professional-grade setups for livestreams, laser shows, LED mapping, and multi-camera production. Adept at configuring high-speed internet routing, managing real-time streaming across platforms like TikTok, Instagram, Facebook, and YouTube, and transforming complex technical needs into smooth, visual experiences. Clients choose Aizat for reliability, speed, and jaw-dropping visual execution — whether it's a social media livestream or a massive party laser show.
+  </p>
+</section>
+
 <section id="portfolio" data-aos="fade-up">
   <h2>📁 Portfolio Highlights</h2>
   <div class="filter-buttons">
@@ -141,13 +169,60 @@
     <button onclick="filterItems('prod')">Production</button>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item stream show"><img src="TIKTOK LIVE STREAMING SETUP 6.jpeg" alt="TikTok Setup"></div>
-    <div class="gallery-item stream show"><video controls><source src="tiktok live streaming setup (10).mp4" type="video/mp4"></video></div>
-    <div class="gallery-item laser show"><img src="LASER 4.jpeg" alt="Laser Show"></div>
-    <div class="gallery-item laser show"><img src="MCP & LED MAPPING 2.jpeg" alt="LED Mapping"></div>
-    <div class="gallery-item prod show"><img src="NETWORK ROUTING 2.jpeg" alt="Routing"></div>
-    <div class="gallery-item prod show"><video controls><source src="OFFLINE SHOOTING 15.mp4" type="video/mp4"></video></div>
+    <div class="gallery-item stream show">
+      <video controls><source src="tiktok live streaming setup (9).mp4" type="video/mp4"></video>
+      <div class="caption">Mobile Livestream Rig (TikTok Session)</div>
+    </div>
+    <div class="gallery-item stream show">
+      <video controls><source src="tiktok live streaming setup (6).mp4" type="video/mp4"></video>
+      <div class="caption">Dual-Cam Streaming from Studio</div>
+    </div>
+    <div class="gallery-item stream show">
+      <video controls><source src="tiktok live streaming setup (10).mp4" type="video/mp4"></video>
+      <div class="caption">Live Multicamera TikTok Session Demo</div>
+    </div>
+    <div class="gallery-item stream show">
+      <video controls><source src="MCP CAM OPERATE 15.mp4" type="video/mp4"></video>
+      <div class="caption">Live Camera Switching & Coordination</div>
+    </div>
+    <div class="gallery-item laser show">
+      <img src="LASER 4.jpeg" alt="Laser Show">
+      <div class="caption">Dynamic Laser Visual Show Setup</div>
+    </div>
+    <div class="gallery-item laser show">
+      <video controls><source src="MCP & LIVE SETUP 24.mp4" type="video/mp4"></video>
+      <div class="caption">Laser Integration on Main Stage</div>
+    </div>
+    <div class="gallery-item prod show">
+      <video controls><source src="OFFLINE SHOOTING 15.mp4" type="video/mp4"></video>
+      <div class="caption">Offline Production & Camera Setup</div>
+    </div>
+    <div class="gallery-item prod show">
+      <video controls><source src="MCP & LIVE SETUP 22.mp4" type="video/mp4"></video>
+      <div class="caption">Pre-Live Stage Setup Session</div>
+    </div>
+    <div class="gallery-item prod show">
+      <video controls><source src="MCP & LIVE SETUP 23.mp4" type="video/mp4"></video>
+      <div class="caption">Crew Coordination Behind-the-Scenes</div>
+    </div>
   </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>⭐ Client Testimonials</h2>
+  <div class="testimonial">"Professional, fast, and the livestream quality was crystal clear. Aizat made our brand event seamless." — Event Manager, Tech Fest MY</div>
+  <div class="testimonial">"Highly recommended for any live show production. The laser and LED integration blew our audience away!" — Creative Director, Neon Rave Asia</div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>💰 Services & Pricing</h2>
+  <ul>
+    <li>🎥 Social Media Livestream Setup (TikTok, IG, YouTube): RM800 – RM1,200/event</li>
+    <li>🔴 Multi-Cam Production & Switching: RM1,500+</li>
+    <li>🎇 Laser Show Visual & Operation: RM1,200 – RM2,000</li>
+    <li>🌐 Network Routing & Onsite Internet Optimization: RM500+</li>
+    <li>📦 Full Event AV Package (Custom Quote)</li>
+  </ul>
 </section>
 
 <section id="contact" data-aos="fade-up">
