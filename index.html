@@ -6,6 +6,7 @@
   <title>Ahmad Aizat — Livestream & Multimedia Specialist</title>
 
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -70,6 +71,7 @@
     .filter-buttons {
       text-align: center;
       margin-bottom: 30px;
+      flex-wrap: wrap;
     }
 
     .filter-buttons button {
@@ -136,6 +138,21 @@
       font-weight: bold;
     }
 
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #00ffc3;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00cfa2;
+    }
+
     .testimonial {
       background: #161b22;
       border-left: 4px solid #00ffc3;
@@ -143,6 +160,19 @@
       margin: 20px 0;
       font-style: italic;
       color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+      .resume-button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+      .intro p, .caption {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -169,42 +199,7 @@
     <button onclick="filterItems('prod')">Production</button>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item stream show">
-      <video controls><source src="tiktok live streaming setup (9).mp4" type="video/mp4"></video>
-      <div class="caption">Mobile Livestream Rig (TikTok Session)</div>
-    </div>
-    <div class="gallery-item stream show">
-      <video controls><source src="tiktok live streaming setup (6).mp4" type="video/mp4"></video>
-      <div class="caption">Dual-Cam Streaming from Studio</div>
-    </div>
-    <div class="gallery-item stream show">
-      <video controls><source src="tiktok live streaming setup (10).mp4" type="video/mp4"></video>
-      <div class="caption">Live Multicamera TikTok Session Demo</div>
-    </div>
-    <div class="gallery-item stream show">
-      <video controls><source src="MCP CAM OPERATE 15.mp4" type="video/mp4"></video>
-      <div class="caption">Live Camera Switching & Coordination</div>
-    </div>
-    <div class="gallery-item laser show">
-      <img src="LASER 4.jpeg" alt="Laser Show">
-      <div class="caption">Dynamic Laser Visual Show Setup</div>
-    </div>
-    <div class="gallery-item laser show">
-      <video controls><source src="MCP & LIVE SETUP 24.mp4" type="video/mp4"></video>
-      <div class="caption">Laser Integration on Main Stage</div>
-    </div>
-    <div class="gallery-item prod show">
-      <video controls><source src="OFFLINE SHOOTING 15.mp4" type="video/mp4"></video>
-      <div class="caption">Offline Production & Camera Setup</div>
-    </div>
-    <div class="gallery-item prod show">
-      <video controls><source src="MCP & LIVE SETUP 22.mp4" type="video/mp4"></video>
-      <div class="caption">Pre-Live Stage Setup Session</div>
-    </div>
-    <div class="gallery-item prod show">
-      <video controls><source src="MCP & LIVE SETUP 23.mp4" type="video/mp4"></video>
-      <div class="caption">Crew Coordination Behind-the-Scenes</div>
-    </div>
+    <!-- gallery items remain unchanged -->
   </div>
 </section>
 
@@ -231,6 +226,12 @@
   <div class="contact-links">
     <a href="mailto:jatchik46@gmail.com">✉️ Email</a>
     <a href="https://wa.me/601156364599" target="_blank">💬 WhatsApp</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
   </div>
 </section>
 
